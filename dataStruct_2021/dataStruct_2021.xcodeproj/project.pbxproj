@@ -102,7 +102,7 @@
 		5235C31D262DCFDF00B97F79 /* LinkListPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LinkListPerson.m; sourceTree = "<group>"; };
 		5235C322262DD40200B97F79 /* Queue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Queue.h; sourceTree = "<group>"; };
 		5235C323262DD40200B97F79 /* Queue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Queue.m; sourceTree = "<group>"; };
-		5251425526255E00006748E9 /* dataStruct */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = dataStruct; sourceTree = BUILT_PRODUCTS_DIR; };
+		5251425526255E00006748E9 /* dataStruct_2021 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = dataStruct_2021; sourceTree = BUILT_PRODUCTS_DIR; };
 		5251425826255E00006748E9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		525D3E9626301C2D004A91ED /* MJBinaryTrees.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJBinaryTrees.h; sourceTree = "<group>"; };
 		525D3E9826301C2D004A91ED /* MJLevelOrderPrinter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJLevelOrderPrinter.h; sourceTree = "<group>"; };
@@ -293,7 +293,7 @@
 		5251425626255E00006748E9 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5251425526255E00006748E9 /* dataStruct */,
+				5251425526255E00006748E9 /* dataStruct_2021 */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -431,9 +431,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5251425426255E00006748E9 /* dataStruct */ = {
+		5251425426255E00006748E9 /* dataStruct_2021 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5251425C26255E00006748E9 /* Build configuration list for PBXNativeTarget "dataStruct" */;
+			buildConfigurationList = 5251425C26255E00006748E9 /* Build configuration list for PBXNativeTarget "dataStruct_2021" */;
 			buildPhases = (
 				5251425126255E00006748E9 /* Sources */,
 				5251425226255E00006748E9 /* Frameworks */,
@@ -443,9 +443,9 @@
 			);
 			dependencies = (
 			);
-			name = dataStruct;
+			name = dataStruct_2021;
 			productName = dataStruct;
-			productReference = 5251425526255E00006748E9 /* dataStruct */;
+			productReference = 5251425526255E00006748E9 /* dataStruct_2021 */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -461,7 +461,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5251425026255E00006748E9 /* Build configuration list for PBXProject "dataStruct" */;
+			buildConfigurationList = 5251425026255E00006748E9 /* Build configuration list for PBXProject "dataStruct_2021" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -474,7 +474,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5251425426255E00006748E9 /* dataStruct */,
+				5251425426255E00006748E9 /* dataStruct_2021 */,
 			);
 		};
 /* End PBXProject section */
@@ -671,7 +671,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5251425026255E00006748E9 /* Build configuration list for PBXProject "dataStruct" */ = {
+		5251425026255E00006748E9 /* Build configuration list for PBXProject "dataStruct_2021" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5251425A26255E00006748E9 /* Debug */,
@@ -680,7 +680,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5251425C26255E00006748E9 /* Build configuration list for PBXNativeTarget "dataStruct" */ = {
+		5251425C26255E00006748E9 /* Build configuration list for PBXNativeTarget "dataStruct_2021" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5251425D26255E00006748E9 /* Debug */,
