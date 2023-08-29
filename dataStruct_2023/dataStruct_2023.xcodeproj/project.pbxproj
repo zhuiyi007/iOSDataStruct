@@ -44,6 +44,10 @@
 		4699B2462A73633100209B4F /* BinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4699B2442A73633100209B4F /* BinaryTree.swift */; };
 		46ED8ED72A9D8F380055BEE0 /* TreePerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ED8ED62A9D8F380055BEE0 /* TreePerson.swift */; };
 		46ED8ED82A9D8F380055BEE0 /* TreePerson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ED8ED62A9D8F380055BEE0 /* TreePerson.swift */; };
+		46ED8EDA2A9D931D0055BEE0 /* RBTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ED8ED92A9D931C0055BEE0 /* RBTree.swift */; };
+		46ED8EDB2A9D931D0055BEE0 /* RBTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ED8ED92A9D931C0055BEE0 /* RBTree.swift */; };
+		46ED8EDD2A9D935E0055BEE0 /* BinaryBalanceSearchTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ED8EDC2A9D935E0055BEE0 /* BinaryBalanceSearchTree.swift */; };
+		46ED8EDE2A9D935E0055BEE0 /* BinaryBalanceSearchTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46ED8EDC2A9D935E0055BEE0 /* BinaryBalanceSearchTree.swift */; };
 		46F6F41A2A85D1D5006C0056 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F6F4192A85D1D5006C0056 /* Exercise.swift */; };
 		46F6F41B2A85D1D5006C0056 /* Exercise.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F6F4192A85D1D5006C0056 /* Exercise.swift */; };
 		46F6F41D2A85D365006C0056 /* TreeRun.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46F6F41C2A85D365006C0056 /* TreeRun.swift */; };
@@ -94,6 +98,8 @@
 		4699B2402A70C5E900209B4F /* dataStruct_2023-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "dataStruct_2023-Bridging-Header.h"; sourceTree = "<group>"; };
 		4699B2442A73633100209B4F /* BinaryTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BinaryTree.swift; path = MJBinaryTrees/BinaryTree.swift; sourceTree = "<group>"; };
 		46ED8ED62A9D8F380055BEE0 /* TreePerson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreePerson.swift; sourceTree = "<group>"; };
+		46ED8ED92A9D931C0055BEE0 /* RBTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RBTree.swift; sourceTree = "<group>"; };
+		46ED8EDC2A9D935E0055BEE0 /* BinaryBalanceSearchTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryBalanceSearchTree.swift; sourceTree = "<group>"; };
 		46F6F4192A85D1D5006C0056 /* Exercise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise.swift; sourceTree = "<group>"; };
 		46F6F41C2A85D365006C0056 /* TreeRun.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TreeRun.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -175,10 +181,12 @@
 			isa = PBXGroup;
 			children = (
 				4699B2292A70BBF800209B4F /* MJBinaryTrees */,
-				4699B2262A6E216B00209B4F /* BinarySearchTree.swift */,
-				4699B2442A73633100209B4F /* BinaryTree.swift */,
 				46ED8ED62A9D8F380055BEE0 /* TreePerson.swift */,
+				4699B2442A73633100209B4F /* BinaryTree.swift */,
+				4699B2262A6E216B00209B4F /* BinarySearchTree.swift */,
+				46ED8EDC2A9D935E0055BEE0 /* BinaryBalanceSearchTree.swift */,
 				468C9B322A93001100215F32 /* AVLTree.swift */,
+				46ED8ED92A9D931C0055BEE0 /* RBTree.swift */,
 				46F6F4192A85D1D5006C0056 /* Exercise.swift */,
 				46F6F41C2A85D365006C0056 /* TreeRun.swift */,
 			);
@@ -301,6 +309,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4699B2452A73633100209B4F /* BinaryTree.swift in Sources */,
+				46ED8EDD2A9D935E0055BEE0 /* BinaryBalanceSearchTree.swift in Sources */,
 				4699B23E2A70BBF800209B4F /* NSString+Trees.m in Sources */,
 				4699B1F12A60113600209B4F /* main.swift in Sources */,
 				4699B1FE2A60EE8E00209B4F /* List.swift in Sources */,
@@ -310,6 +319,7 @@
 				4699B23C2A70BBF800209B4F /* MJBinaryTrees.m in Sources */,
 				4699B2272A6E216B00209B4F /* BinarySearchTree.swift in Sources */,
 				4699B2222A67979600209B4F /* test.swift in Sources */,
+				46ED8EDA2A9D931D0055BEE0 /* RBTree.swift in Sources */,
 				4699B2162A663A4D00209B4F /* DoublyLinkList.swift in Sources */,
 				4699B2192A677FE200209B4F /* LoopLinkList.swift in Sources */,
 				4699B23A2A70BBF800209B4F /* MJPrinter.m in Sources */,
@@ -333,6 +343,7 @@
 				46F6F41B2A85D1D5006C0056 /* Exercise.swift in Sources */,
 				46ED8ED82A9D8F380055BEE0 /* TreePerson.swift in Sources */,
 				4699B20F2A6125A800209B4F /* List.swift in Sources */,
+				46ED8EDE2A9D935E0055BEE0 /* BinaryBalanceSearchTree.swift in Sources */,
 				4699B2392A70BBF800209B4F /* MJLevelOrderPrinter.m in Sources */,
 				4699B23D2A70BBF800209B4F /* MJBinaryTrees.m in Sources */,
 				4699B20E2A61253000209B4F /* LinkList.swift in Sources */,
@@ -344,6 +355,7 @@
 				4699B23F2A70BBF800209B4F /* NSString+Trees.m in Sources */,
 				4699B2172A663A4D00209B4F /* DoublyLinkList.swift in Sources */,
 				468C9B342A93001100215F32 /* AVLTree.swift in Sources */,
+				46ED8EDB2A9D931D0055BEE0 /* RBTree.swift in Sources */,
 				468C3FA82A8BA95A00215F32 /* BinaryTreeTests.swift in Sources */,
 				4699B23B2A70BBF800209B4F /* MJPrinter.m in Sources */,
 				4699B20D2A61236F00209B4F /* LinkListTests.swift in Sources */,
