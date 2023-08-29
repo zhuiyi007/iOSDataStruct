@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "3CF20EE7-B029-4F76-8193-A180CB62D6B0",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:dataStruct_2023.xcodeproj",
+        "identifier" : "4699B2042A61235600209B4F",
+        "name" : "dataStructTests_2023"
+      }
+    }
+  ],
+  "version" : 1
+}
