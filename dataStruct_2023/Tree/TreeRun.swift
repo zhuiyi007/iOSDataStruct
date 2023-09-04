@@ -148,9 +148,9 @@ func treeRun() {
     /// 删除唯一的根节点
     print("remove node:\(tree.remove(element: 4) ?? -1)")
     MJBinaryTrees.println(tree)
-    print("--------")
+    print("----AVL ADD----")
     
-    let array = [15, 67, 9, 12, 49, 60, 97, 41, 87, 71, 99, 14, 1, 74, 84]
+    var array = [15, 67, 9, 12, 49, 60, 97, 41, 87, 71, 99, 14, 1, 74, 84]
     tree = AVLTree(comparator: comparator)
     for i in array {
         print("***************************")
@@ -158,11 +158,21 @@ func treeRun() {
         tree.add(element: i)
         MJBinaryTrees.println(tree)
     }
-    print("--------")
+    print("----AVL REMOVE----")
     for i in array {
         print("***************************")
         print("remove : \(i)")
         tree.remove(element: i)
+        MJBinaryTrees.println(tree)
+    }
+    print("----add RBTree----")
+    
+    array = [15, 49, 37, 61, 73, 19, 52, 76, 10, 41, 72, 5, 83, 45, 77, 7, 68, 39, 14]
+    tree = RBTree(comparator: comparator)
+    for i in array {
+        print("***************************")
+        print("add : \(i)")
+        tree.add(element: i)
         MJBinaryTrees.println(tree)
     }
     print("--------")

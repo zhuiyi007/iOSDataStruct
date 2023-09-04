@@ -116,6 +116,16 @@ class AVLTree<E: Comparable>: BinaryBalanceSearchTree<E> {
         }
     }
     
+    override func afterRotate(grand: BinaryTreeNode<E>, parent: BinaryTreeNode<E>, child: BinaryTreeNode<E>?) {
+        super.afterRotate(grand: grand, parent: parent, child: child)
+        
+        let avlGrand = grand as! AVLTreeNode<E>
+        let avlParent = parent as! AVLTreeNode<E>
+        /// 从底层开始往上更新高度
+        avlGrand.updateHeight()
+        avlParent.updateHeight()
+    }
+    
     /// V2版本,提前组织好a-g节点,进行统一的旋转操作
     func rebalanceTree(node: AVLTreeNode<E>) {
         /// node为最底层失衡的节点
@@ -144,5 +154,17 @@ class AVLTree<E: Comparable>: BinaryBalanceSearchTree<E> {
                 rotate(root: grand, b: grand, c: parent.left as? AVLTreeNode<E>, d: parent, e: child.left as? AVLTreeNode<E>, f: child)
             }
         }
+    }
+    
+    override func rotate(root: BinaryTreeNode<E>, b: BinaryTreeNode<E>, c: BinaryTreeNode<E>?, d: BinaryTreeNode<E>, e: BinaryTreeNode<E>?, f: BinaryTreeNode<E>) {
+        super.rotate(root: root, b: b, c: c, d: d, e: e, f: f)
+        
+        let avlB = b as! AVLTreeNode<E>
+        let avlD = d as! AVLTreeNode<E>
+        let avlF = f as! AVLTreeNode<E>
+        /// 从底层开始往上更新高度
+        avlB.updateHeight()
+        avlF.updateHeight()
+        avlD.updateHeight()
     }
 }

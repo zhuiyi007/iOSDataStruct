@@ -43,8 +43,8 @@ class BinarySearchTree<E: Comparable>: BinaryTree<E> {
                 parent!.left = addNode
             }
             addNode.parent = parent
-            afterAdd(node: addNode)
         }
+        afterAdd(node: addNode)
         _size += 1
     }
     
