@@ -65,7 +65,7 @@ class AVLTree<E: Comparable>: BinaryBalanceSearchTree<E> {
         }
     }
     
-    override func afterRemove(node: BinaryTreeNode<E>) {
+    override func afterRemove(node: BinaryTreeNode<E>, replaceNode: BinaryTreeNode<E>?) {
         var avlTreeNode = node.parent as? AVLTreeNode
         while avlTreeNode != nil {
             /// 往上找

@@ -59,6 +59,7 @@ class BinarySearchTree<E: Comparable>: BinaryTree<E> {
             return nil
         }
         let removeElement = node!.element
+        var replaceNode: BinaryTreeNode<E>? = nil
         if BinarySearchTree.hasTwoChild(node: node) {
             /// 是度为2的节点
             /// 找到这个节点的前驱或后继
@@ -89,6 +90,8 @@ class BinarySearchTree<E: Comparable>: BinaryTree<E> {
             /// 度为1的节点
             /// 找到这个节点的子节点
             let child = node!.left != nil ? node!.left : node!.right
+            /// 记录替换的节点为child
+            replaceNode = child
             if node!.parent == nil {
                 /// 要删除的是度为1的根节点
                 rootNode = child
@@ -102,13 +105,13 @@ class BinarySearchTree<E: Comparable>: BinaryTree<E> {
             /// 维护parent指针指向
             child!.parent = node!.parent
         }
-        afterRemove(node: node!)
+        afterRemove(node: node!, replaceNode: replaceNode)
         _size -= 1
         return removeElement
     }
     
     /// 删除结束后调用的方法,供子类重写
-    func afterRemove(node: BinaryTreeNode<E>) {
+    func afterRemove(node: BinaryTreeNode<E>, replaceNode: BinaryTreeNode<E>?) {
         
     }
     

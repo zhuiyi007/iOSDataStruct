@@ -167,7 +167,7 @@ func treeRun() {
     }
     print("----add RBTree----")
     
-    array = [15, 49, 37, 61, 73, 19, 52, 76, 10, 41, 72, 5, 83, 45, 77, 7, 68, 39, 14]
+    array = [19, 89, 28, 24, 92, 14, 18, 39, 77, 11, 50, 10, 93, 64, 4, 25]
     tree = RBTree(comparator: comparator)
     for i in array {
         print("***************************")
@@ -175,5 +175,11 @@ func treeRun() {
         tree.add(element: i)
         MJBinaryTrees.println(tree)
     }
-    print("--------")
+    print("----remove RBTree----")
+    for i in array {
+        print("***************************")
+        print("remove : \(i)")
+        tree.remove(element: i)
+        MJBinaryTrees.println(tree)
+    }
 }
